@@ -57,7 +57,7 @@ steps:
     arguments: '--no-restore --configuration $(buildConfiguration)'
     projects: '**/*.csproj'
 
-git s- task: DotNetCoreCLI@2
+- task: DotNetCoreCLI@2
   displayName: 'Install ReportGenerator'
   inputs:
     command: custom
@@ -82,7 +82,6 @@ git s- task: DotNetCoreCLI@2
 
 - task: SonarCloudPublish@1
   displayName: 'Publish SonarCloud quality gate results'
-  
 - task: PublishCodeCoverageResults@1
   displayName: 'Publish code coverage report'
   inputs:
