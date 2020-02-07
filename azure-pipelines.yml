@@ -3,7 +3,7 @@ trigger:
 
 pool:
   name: 'MyAgentPool'
-  vmImage: 'dr2673LinuxVm'
+# vmImage: 'dr2673LinuxVm'
   demands:
     - npm
 
