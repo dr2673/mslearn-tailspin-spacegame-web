@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: 'vsts-aci-agent'
+  name: 'ATTAZPipelines'
 
 variables:
   buildConfiguration: 'Release'
